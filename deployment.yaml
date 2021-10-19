@@ -27,6 +27,8 @@ spec:
   selector:
     app: fortune
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 5000
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: LoadBalancer
