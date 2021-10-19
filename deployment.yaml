@@ -31,4 +31,15 @@ spec:
     - name: http
       protocol: TCP
       port: 80
-      targetPort: 80
+      targetPort: 5000
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: fortune-ingress
+spec:
+  defaultBackend:
+    service:
+      name: fortune
+      port:
+        number: 80
