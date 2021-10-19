@@ -24,6 +24,7 @@ kind: Service
 metadata:
   name: fortune
 spec:
+  type: NodePort
   selector:
     app: fortune
   ports:
@@ -31,4 +32,3 @@ spec:
       protocol: TCP
       port: 80
       targetPort: 5000
-  type: LoadBalancer
