@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
       - name: fortune
-        image: alexkaydocker/flask-fortune
+        image: alexkaydocker/flask-fortune:latest
         ports:
-        - containerPort: 80
+        - containerPort: 5000
 ---
 apiVersion: v1
 kind: Service
@@ -29,4 +29,4 @@ spec:
   ports:
   - protocol: TCP
     port: 80
-    targetPort: http
+    targetPort: 5000
