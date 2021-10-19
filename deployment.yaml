@@ -17,8 +17,7 @@ spec:
       - name: fortune
         image: alexkaydocker/flask-fortune:latest
         ports:
-        - name: flask
-          containerPort: 5000
+        - containerPort: 5000
 ---
 apiVersion: v1
 kind: Service
