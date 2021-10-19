@@ -17,7 +17,8 @@ spec:
       - name: fortune
         image: alexkaydocker/flask-fortune:latest
         ports:
-        - containerPort: 5000
+        - name: flask
+          containerPort: 5000
 ---
 apiVersion: v1
 kind: Service
@@ -32,14 +33,25 @@ spec:
       protocol: TCP
       port: 80
       targetPort: 5000
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: fortune-ingress
-spec:
-  defaultBackend:
-    service:
-      name: fortune
-      port:
-        number: 80
+# ---
+# apiVersion: networking.k8s.io/v1
+# kind: IngressClass
+# metadata:
+#   name: external-lb
+# spec:
+#   controller: example.com/ingress-controller
+#   parameters:
+#     apiGroup: k8s.example.com
+#     kind: IngressParameters
+#     name: external-lb
+# ---
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: fortune-ingress
+# spec:
+#   defaultBackend:
+#     service:
+#       name: fortune
+#       port:
+#         number: 80
