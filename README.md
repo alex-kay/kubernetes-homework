@@ -11,3 +11,5 @@
 ## Homework task completion steps
 
 * Took a simple deployment yaml from k8s official tutorial, to use as a template for our app deployment
+* I made an own docker container which contains `Flask` app that uses `fortune-mod` 
+* Wrote a deployment with a simple service
