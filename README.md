@@ -20,3 +20,7 @@
 
 * Added an ingress and created a namespace `alex` on cluster
 * App works on [http://alex-fortune.kubelab.spainip.es](http://alex-fortune.kubelab.spainip.es)
+
+### Task 3
+
+In another repository, [https://github.com/alex-kay/kubernetes-homework3](https://github.com/alex-kay/kubernetes-homework3)
