@@ -12,4 +12,4 @@
 
 * Took a simple deployment yaml from k8s official tutorial, to use as a template for our app deployment
 * Made a docker image from `python:slim` image adding `fortune-mod` and `Flask`
-* Created a simple deployment with this 2 pods
+* Wrote a deployment with a simple service
