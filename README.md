@@ -15,3 +15,8 @@
 * Wrote a deployment with a simple service
 * deployed it on Minikube and got a fortune answer from service inner ip:
 ![img1](img/Screenshot%202021-10-27%20080056.png)
+
+## Task 2
+
+* Added an ingress and created a namespace `alex` on cluster
+* App works on [http://alex-fortune.kubelab.spainip.es](http://alex-fortune.kubelab.spainip.es)
