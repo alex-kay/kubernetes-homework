@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: fortune
-        image: alexkaydocker/flask-fortune:latest
+        image: alexkaydocker/flask-fortune:stable
         ports:
         - containerPort: 80
 ---

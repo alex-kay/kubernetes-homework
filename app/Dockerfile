@@ -3,4 +3,7 @@ WORKDIR /app
 RUN apt update && apt install fortune-mod -y
 RUN pip3 install -U Flask
 COPY . .
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=80"]
+ENV FLASK_RUN_PORT=80
+EXPOSE 80
+ENTRYPOINT ["python3"]
+CMD ["app.py"]
