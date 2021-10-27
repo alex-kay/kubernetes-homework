@@ -38,7 +38,7 @@ kind: Ingress
 metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt
-  name: some_ingress_name
+  name: fortune-ingress
   namespace: alex
 spec:
   rules:
